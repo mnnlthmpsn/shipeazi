@@ -13,10 +13,10 @@ export const MoveNowSection = () => {
           ability to tailor your services to best fit your needs. Not sure where
           to begin? Let us help you unpack your options.
         </p>
-        <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex w-full lg:w-3/4 py-6 lg:space-x-6 lg:pr-12">
-          <button className="btn-primary lg:w-1/2">Book a move</button>
-          <button className="btn-secondary lg:w-1/2">(233) 54 060 9437</button>
-        </div>
+        <div className="flex-col lg:grid grid-cols-2 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
+            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-secondary w-full">(233) 54 060 9437</button>
+          </div>
       </div>
     </div>
   );

@@ -5,11 +5,11 @@ export const IntroSection = () => {
     <div className="kPaddingLarge grid lg:grid-cols-2 gap-16 items-center">
       <div className="flex flex-col space-y-3">
         <p className="text-blue-400">Shipeazi Moving</p>
-        <div className="space-y-3 text-5xl font-semibold">
+        <div className="space-y-1 lg:space-y-3 text-4xl lg:text-5xl font-semibold">
           <p>Moving made</p>
           <p>modern.</p>
         </div>
-        <p className="text-lg tracking-wide text-gray-500">
+        <p className="lg:text-lg tracking-wide text-gray-500">
           It doesn't have to be a hassle to make a moving plan. In minutes, get
           a free quote and book with $0 down. Then, manage every aspect of your
           move from your online dashboard.{" "}

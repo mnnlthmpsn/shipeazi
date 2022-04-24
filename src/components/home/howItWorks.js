@@ -21,9 +21,9 @@ export const HowItWorks = () => {
             than 15 minutes we can match you with the most-qualified team for
             your move.
           </p>
-          <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex w-full lg:w-3/4 py-6 lg:space-x-6 lg:pr-12">
-            <button className="btn-primary lg:w-1/2">Book a move</button>
-            <button className="btn-secondary lg:w-1/2">(233) 54 060 9437</button>
+          <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
+            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
       </div>
@@ -39,9 +39,9 @@ export const HowItWorks = () => {
             than 15 minutes we can match you with the most-qualified team for
             your move.
           </p>
-          <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex w-full lg:w-3/4 py-6 lg:space-x-6 lg:pr-12">
-            <button className="btn-primary lg:w-1/2">Book a move</button>
-            <button className="btn-secondary lg:w-1/2">(233) 54 060 9437</button>
+          <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
+            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
         <div className="flex order-first lg:order-last">
@@ -64,9 +64,9 @@ export const HowItWorks = () => {
             conduct a brief walk-through, take note of any special instructions,
             and then get to work
           </p>
-          <div className="flex flex-col space-y-3 lg:space-y-0 lg:flex w-full lg:w-3/4 py-6 lg:space-x-6 lg:pr-12">
-            <button className="btn-primary lg:w-1/2">Book a move</button>
-            <button className="btn-secondary lg:w-1/2">(233) 54 060 9437</button>
+          <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
+            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
       </div>
