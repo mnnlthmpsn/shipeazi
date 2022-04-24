@@ -1,0 +1,8 @@
+export { IntroSection } from './introSection'
+export { AboutSection } from './aboutSection'
+export { FirstServiceSection } from './firstServiceSection'
+export { SecondServiceSection } from './secondServiceSection'
+export { Testimonial } from './testimonial'
+export { NumberSection } from './numberSection'
+export { HowItWorks } from './howItWorks'
+export { MoveNowSection } from './moveNowSection'
