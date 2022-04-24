@@ -51,6 +51,7 @@ export const Header = () => {
               <p className="text-lg menu-link">{link.name}</p>
             ))
           }
+          <p className="menu-link">(233) 54 060 9437</p>
           <button className="btn-secondary w-2/3">My Reservations</button>
           <button className="btn-primary w-2/3">Book a Move</button>
         </div>
