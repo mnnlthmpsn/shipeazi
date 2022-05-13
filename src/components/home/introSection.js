@@ -1,10 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import testImg from '../../images/testImg.png'
 
-export const IntroSection = () => {
-
-  const router = useNavigate()
-  const toRoute = route => router(route)
+export const IntroSection = ({ toRoute }) => { 
 
   return (
     <div className="kPaddingLarge grid lg:grid-cols-2 gap-16 items-center">

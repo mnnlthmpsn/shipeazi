@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { MenuAlt2Icon, XIcon } from "@heroicons/react/solid";
 
-export const Header = () => {
+export const Header = ({ toRoute }) => {
   const [toggle, setToggle] = useState(false);
 
   const links = [
@@ -36,7 +36,7 @@ export const Header = () => {
         </div>
         <div className="hidden lg:flex space-x-4 items-center">
           <p className="menu-link">My reservations</p>
-          <button className="btn-secondary">Book a move</button>
+          <button className="btn-secondary" onClick={() => toRoute('/book')}>Book a move</button>
         </div>
       </div>
 

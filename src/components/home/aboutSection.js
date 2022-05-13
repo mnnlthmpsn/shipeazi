@@ -1,6 +1,6 @@
 import testImg from "../../images/testImg.png";
 
-export const AboutSection = () => {
+export const AboutSection = ({ toRoute }) => {
   return (
     <div className="bg-[#F5F7F9] kPaddingMedium grid lg:grid-cols-2 gap-16 items-center">
       <div className="flex items-center justify-center">
@@ -16,7 +16,7 @@ export const AboutSection = () => {
           easy-to-access online dashboard.
         </p>
         <div className="lg:w-2/5 pt-6">
-          <button className="btn-primary w-full">Book a move</button>
+          <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
         </div>
       </div>
     </div>

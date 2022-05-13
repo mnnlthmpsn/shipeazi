@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   AboutSection,
   FirstServiceSection,
@@ -12,17 +13,21 @@ import {
 import { Header } from "../components/shared";
 
 export const Home = () => {
+
+  const toRoute = route => router(route)
+  const router = useNavigate()
+
   return (
     <Fragment>
-      <Header />
-      <IntroSection />
-      <AboutSection />
+      <Header toRoute={toRoute} />
+      <IntroSection toRoute={toRoute} />
+      <AboutSection toRoute={toRoute} />
       <FirstServiceSection />
       <Testimonial />
       <NumberSection />
-      <HowItWorks />
+      <HowItWorks toRoute={toRoute} />
       <SecondServiceSection />
-      <MoveNowSection />
+      <MoveNowSection toRoute={toRoute} />
     </Fragment>
   );
 };

@@ -1,6 +1,6 @@
 import testImg from "../../images/testImg.png";
 
-export const HowItWorks = () => {
+export const HowItWorks = ({ toRoute }) => {
   return (
     <div className="kPadding py-10 lg:py-20 flex flex-col items-center">
       <p className="text-xl lg:text-4xl text-center font-semibold">
@@ -22,7 +22,7 @@ export const HowItWorks = () => {
             your move.
           </p>
           <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
-            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
             <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
@@ -40,7 +40,7 @@ export const HowItWorks = () => {
             your move.
           </p>
           <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
-            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
             <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
@@ -65,7 +65,7 @@ export const HowItWorks = () => {
             and then get to work
           </p>
           <div className="flex-col lg:grid grid-cols-2 lg:w-4/5 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
-            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
             <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>

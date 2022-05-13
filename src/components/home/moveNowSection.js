@@ -1,6 +1,6 @@
 import testImg from "../../images/testImg.png";
 
-export const MoveNowSection = () => {
+export const MoveNowSection = ({ toRoute }) => {
   return (
     <div className="grid lg:grid-cols-2 kPaddingLarge gap-16 items-center justify-center">
       <div className="flex items-center justify-center">
@@ -14,7 +14,7 @@ export const MoveNowSection = () => {
           to begin? Let us help you unpack your options.
         </p>
         <div className="flex-col lg:grid grid-cols-2 space-y-3 lg:space-y-0 lg:flex w-full py-6 lg:gap-2 lg:pr-12">
-            <button className="btn-primary w-full">Book a move</button>
+            <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
             <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
       </div>
