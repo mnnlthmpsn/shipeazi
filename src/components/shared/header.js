@@ -42,7 +42,7 @@ export const Header = () => {
 
       {/* mobile menu*/}
       <div
-        className={`lg:hidden fixed h-screen w-screen bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-full" : "opacity-0 h-0"
+        className={`lg:hidden fixed bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-screen" : "opacity-0 hidden"
           }`}
       >
         <div className="flex-col p-8 space-y-2">
