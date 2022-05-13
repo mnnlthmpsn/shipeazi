@@ -33,11 +33,11 @@ body {
 }
 
 .btn-info {
-    @apply rounded bg-blue-600 text-white px-10 py-2 ripple-bg-blue-400 font-bold text-sm 
+    @apply rounded bg-blue-600 text-white px-10 py-3 ripple-bg-blue-400 font-bold text-sm 
 }
 
 .btn-disabled {
-    @apply rounded bg-gray-200 text-gray-800 px-10 py-2 text-white font-bold text-sm cursor-not-allowed
+    @apply rounded bg-gray-200 text-gray-800 px-10 py-3 text-white font-bold text-sm cursor-not-allowed
 }
 
 .menu-link {
