@@ -3,11 +3,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    ripple: theme => ({
+      colors: theme('colors'),
+      darken: 0.06
+  }),
     extend: {
       fontFamily: {
-        sans: ['Nunito']
+        sans: ['Raleway']
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-ripple')()
+  ],
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .kPadding {
@@ -30,6 +30,14 @@ body {
 
 .btn-secondary {
     @apply rounded-3xl border-2 py-2 px-10 border-blue-600 outline-none focus:outline-none hover:bg-blue-50 duration-150
+}
+
+.btn-info {
+    @apply rounded bg-blue-600 text-white px-10 py-2 ripple-bg-blue-400 font-bold text-sm 
+}
+
+.btn-disabled {
+    @apply rounded bg-gray-200 text-gray-800 px-10 py-2 text-white font-bold text-sm cursor-not-allowed
 }
 
 .menu-link {

@@ -1,6 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import testImg from '../../images/testImg.png'
 
 export const IntroSection = () => {
+
+  const router = useNavigate()
+  const toRoute = route => router(route)
+
   return (
     <div className="kPaddingLarge grid lg:grid-cols-2 gap-16 items-center">
       <div className="flex flex-col space-y-3">
@@ -15,7 +20,7 @@ export const IntroSection = () => {
           move from your online dashboard.{" "}
         </p>
         <div className="lg:w-2/5 pt-6 lg:pt-12">
-        <button className="btn-primary w-full">See Pricing</button>
+        <button className="btn-primary w-full" onClick={() => toRoute('/book')}>See Pricing</button>
         </div>
       </div>
       <div className="flex order-first lg:order-last items-center justify-center">

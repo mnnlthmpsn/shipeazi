@@ -10,6 +10,7 @@ export const Header = () => {
     { name: "About", route: "/about" },
     { name: "Become a Mover", route: "/locations" },
   ];
+  
   return (
     <Fragment>
       <div className="h-24 bg-white sticky inset-0 flex justify-between kPadding items-center">
