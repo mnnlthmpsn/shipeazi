@@ -20,11 +20,11 @@ export const Location = () => {
                 <form className="w-full lg:w-1/3 space-y-4">
                     <div className="relative outline outline-gray-200 w-full rounded py-4 flex items-center pl-10">
                         <ViewGridAddIcon className="absolute left-5 h-6 w-auto" />
-                        <input type="text" onChange={e => setLocation({ ...location, starting_loc: e.target.value })} className="outline-none w-full pl-4 h-full text-lg font-semibold text-gray-500" placeholder="Starting Address" />
+                        <input type="text" onChange={e => setLocation({ ...location, starting_loc: e.target.value })} className="outline-none w-full px-4 h-full text-lg font-semibold text-gray-500" placeholder="Starting Address" />
                     </div>
                     <div className="relative outline outline-gray-200 w-full rounded py-4 flex items-center pl-10">
                         <LocationMarkerIcon className="absolute left-5 h-6 w-auto" />
-                        <input type="text" onChange={e => setLocation({ ...location, destination: e.target.value })} className="outline-none w-full pl-4 h-full text-lg font-semibold text-gray-500" placeholder="Starting Address" />
+                        <input type="text" onChange={e => setLocation({ ...location, destination: e.target.value })} className="outline-none w-full px-4 h-full text-lg font-semibold text-gray-500" placeholder="Starting Address" />
                     </div>
                 </form>
             </div>
