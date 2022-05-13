@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import { MenuAlt2Icon, XIcon } from "@heroicons/react/solid";
+import { useNavigate } from "react-router-dom";
 
 export const Header = ({ toRoute }) => {
   const [toggle, setToggle] = useState(false);
@@ -54,7 +55,7 @@ export const Header = ({ toRoute }) => {
           <p className="menu-link">(233) 54 060 9437</p>
           <div className={`space-y-3 ${toggle === true ? 'opacity-100' : 'opacity-0' }`}>
             <button className="btn-secondary w-2/3">My Reservations</button>
-            <button className="btn-primary w-2/3">Book a Move</button>
+            <button className="btn-primary w-2/3" onClick={() => toRoute('/book')}>Book a Move</button>
           </div>
         </div>
       </div>
