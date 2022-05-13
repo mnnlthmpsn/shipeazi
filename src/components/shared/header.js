@@ -10,7 +10,7 @@ export const Header = () => {
     { name: "About", route: "/about" },
     { name: "Become a Mover", route: "/locations" },
   ];
-  
+
   return (
     <Fragment>
       <div className="h-24 bg-white sticky inset-0 flex justify-between kPadding items-center">
@@ -42,9 +42,8 @@ export const Header = () => {
 
       {/* mobile menu*/}
       <div
-        className={`lg:hidden fixed h-screen w-screen bg-gray-50 z-20 duration-300 ${
-          toggle === true ? "opacity-100" : "opacity-0"
-        }`}
+        className={`lg:hidden fixed h-screen w-screen bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-full" : "opacity-0 h-0"
+          }`}
       >
         <div className="flex-col p-8 space-y-2">
           {
@@ -53,8 +52,10 @@ export const Header = () => {
             ))
           }
           <p className="menu-link">(233) 54 060 9437</p>
-          <button className="btn-secondary w-2/3">My Reservations</button>
-          <button className="btn-primary w-2/3">Book a Move</button>
+          <div className={`space-y-3 ${toggle === true ? 'opacity-100' : 'opacity-0' }`}>
+            <button className="btn-secondary w-2/3">My Reservations</button>
+            <button className="btn-primary w-2/3">Book a Move</button>
+          </div>
         </div>
       </div>
     </Fragment>
