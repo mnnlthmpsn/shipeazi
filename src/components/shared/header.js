@@ -14,7 +14,7 @@ export const Header = ({ toRoute }) => {
 
   return (
     <Fragment>
-      <div className="h-24 bg-white sticky inset-0 flex justify-between kPadding items-center">
+      <div className="h-24 bg-white sticky inset-0 z-30 flex justify-between kPadding items-center">
         <div className="text-3xl font-semibold">
           <img src={logoLong} alt="logo" className="h-16 w-auto" />
         </div>

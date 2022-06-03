@@ -22,7 +22,7 @@ export const Slider = () => {
 
     return (
         <Fragment>
-            <div className='relative'>
+            <div className='h-screen w-screen'>
                 {
                     images.map((img, index) => (
                         <div key={index} className={`h-screen w-screen absolute ease-in-out transition-all duration-700 ${current === index ? 'opacity-100' : 'opacity-0'}`}>
@@ -31,7 +31,7 @@ export const Slider = () => {
                     ))
                 }
                 <div className='bg-[#050036] h-screen w-screen absolute opacity-60'></div>
-                <div className="absolute h-screen w-auto flex items-center justify-center pt-10">
+                <div className="absolute h-screen w-auto flex items-center justify-end lg:w-2/3">
                     <IntroSection />
                 </div>
             </div>

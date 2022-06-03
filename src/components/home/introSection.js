@@ -1,4 +1,9 @@
-export const IntroSection = ({ toRoute }) => {
+import { useNavigate } from "react-router-dom";
+
+export const IntroSection = () => {
+
+  const router = useNavigate()
+  const toRoute = route => router(route)
 
   return (
     <div className="kPaddingLarge gap-16 items-center">

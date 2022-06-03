@@ -20,9 +20,8 @@ export const Home = () => {
 
   return (
     <Fragment>
-      <Slider />
       <Header toRoute={toRoute} />
-      <IntroSection toRoute={toRoute} />
+      <Slider />
       <AboutSection toRoute={toRoute} />
       <FirstServiceSection />
       <Testimonial />
