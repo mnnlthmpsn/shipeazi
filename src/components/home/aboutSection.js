@@ -4,7 +4,7 @@ export const AboutSection = ({ toRoute }) => {
   return (
     <div className="bg-[#F5F7F9] kPaddingMedium grid lg:grid-cols-2 gap-16 items-center">
       <div className="flex items-center justify-center">
-        <img src={testImg} alt="" />
+        <img src={testImg} alt="" className="img"/>
       </div>
 
       <div className="flex flex-col space-y-8">
@@ -15,7 +15,7 @@ export const AboutSection = ({ toRoute }) => {
           background-checked movers, industry-best customer support, and an
           easy-to-access online dashboard.
         </p>
-        <div className="lg:w-2/5 pt-6">
+        <div className="pt-6">
           <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
         </div>
       </div>

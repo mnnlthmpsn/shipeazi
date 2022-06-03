@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { MenuAlt2Icon, XIcon } from "@heroicons/react/solid";
-import { useNavigate } from "react-router-dom";
+import logoLong from '../../images/logo_long.jpg'
 
 export const Header = ({ toRoute }) => {
   const [toggle, setToggle] = useState(false);
@@ -15,7 +15,9 @@ export const Header = ({ toRoute }) => {
   return (
     <Fragment>
       <div className="h-24 bg-white sticky inset-0 flex justify-between kPadding items-center">
-        <div className="text-3xl font-semibold">Shipeazi</div>
+        <div className="text-3xl font-semibold">
+          <img src={logoLong} alt="logo" className="h-16 w-auto" />
+        </div>
         <div className="lg:hidden">
           {toggle === false && (
             <MenuAlt2Icon
@@ -37,7 +39,7 @@ export const Header = ({ toRoute }) => {
         </div>
         <div className="hidden lg:flex space-x-4 items-center">
           <p className="menu-link">My reservations</p>
-          <button className="btn-secondary" onClick={() => toRoute('/book')}>Book a move</button>
+          <button className="btn-secondary" onClick={() => toRoute('/book')}>Track Shipment</button>
         </div>
       </div>
 

@@ -10,6 +10,7 @@ import {
   SecondServiceSection,
   Testimonial,
 } from "../components/home";
+import { Slider } from "../components/home/slider";
 import { Header } from "../components/shared";
 
 export const Home = () => {
@@ -19,6 +20,7 @@ export const Home = () => {
 
   return (
     <Fragment>
+      <Slider />
       <Header toRoute={toRoute} />
       <IntroSection toRoute={toRoute} />
       <AboutSection toRoute={toRoute} />

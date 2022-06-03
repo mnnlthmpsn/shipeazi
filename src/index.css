@@ -12,6 +12,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.img {
+    @apply w-96 h-auto object-contain
+}
+
 .kPadding {
     @apply px-8 md:px-16 lg:px-24
 }
@@ -25,15 +29,15 @@ body {
 }
 
 .btn-primary {
-    @apply rounded-3xl outline-none py-3 px-10 bg-blue-600 text-white hover:shadow-xl duration-150 hover:bg-blue-700 focus:outline-none
+    @apply rounded-full text-lg outline-none py-5 bg-primary text-white hover:shadow-xl duration-150 hover:bg-blue-700 focus:outline-none
 }
 
 .btn-secondary {
-    @apply rounded-3xl border-2 py-2 px-10 border-blue-600 outline-none focus:outline-none hover:bg-blue-50 duration-150
+    @apply rounded-full px-16 border-2 py-3 border-primary outline-none focus:outline-none hover:bg-blue-50 duration-150
 }
 
 .btn-info {
-    @apply rounded bg-blue-600 text-white px-10 py-3 ripple-bg-blue-400 font-bold text-sm 
+    @apply rounded bg-primary text-white px-10 py-3 ripple-bg-primary font-bold text-sm 
 }
 
 .btn-disabled {
@@ -41,5 +45,5 @@ body {
 }
 
 .menu-link {
-    @apply hover:bg-blue-50 hover:text-blue-600 hover:rounded-3xl py-2 px-5 cursor-pointer duration-300
+    @apply hover:bg-blue-50 hover:text-primary hover:rounded-3xl py-2 px-5 cursor-pointer duration-300
 }

@@ -8,12 +8,12 @@ export const HowItWorks = ({ toRoute }) => {
       </p>
 
       {/* first */}
-      <div className="grid lg:grid-cols-2 mt-16 gap-16 items-center">
-        <div className="flex items-center justify-center">
-          <img src={testImg} alt="" />
+      <div className="grid col-span-1 lg:grid-cols-3 mt-16 gap-16 items-center">
+        <div className="flex items-center lg:col-span-1 justify-center">
+          <img src={testImg} alt="" className="img"/>
         </div>
-        <div className="space-y-3 flex flex-col items-start">
-          <p className="text-xl font-semibold">
+        <div className="space-y-3 flex flex-col lg:col-span-2 items-start">
+          <p className="text-xl text-center font-semibold">
             Coast through our convenient booking process
           </p>
           <p className="tracking-wide lg:w-3/4">
@@ -29,9 +29,9 @@ export const HowItWorks = ({ toRoute }) => {
       </div>
 
       {/* second */}
-      <div className="grid lg:grid-cols-2 gap-16 mt-16 lg:mt-60 items-center">
-        <div className="space-y-3 items-start flex flex-col">
-          <p className="text-xl font-semibold">
+      <div className="grid lg:grid-cols-3 gap-16 mt-14 lg:mt-32 items-center">
+        <div className="space-y-3 items-start col-span-3 lg:col-span-2 flex flex-col">
+          <p className="text-xl font-semibold text-center">
             Receive ongoing guidance and support.
           </p>
           <p className="tracking-wide">
@@ -44,18 +44,18 @@ export const HowItWorks = ({ toRoute }) => {
             <button className="btn-secondary w-full">(233) 54 060 9437</button>
           </div>
         </div>
-        <div className="flex order-first lg:order-last">
-          <img src={testImg} alt="" />
+        <div className="flex order-first col-span-3 lg:col-span-1 lg:order-last">
+          <img src={testImg} alt="" className="img"/>
         </div>
       </div>
 
       {/* thrid */}
-      <div className="grid lg:grid-cols-2 mt-16 lg:mt-60 gap-16 items-center">
+      <div className="grid col-span-1 lg:grid-cols-3 mt-14 lg:mt-32 gap-16 items-center">
         <div className="flex items-center justify-center">
           <img src={testImg} alt="" />
         </div>
-        <div className="space-y-3 flex flex-col items-start">
-          <p className="text-xl font-semibold">
+        <div className="space-y-3 flex lg:col-span-2 flex-col items-start">
+          <p className="text-xl text-center font-semibold">
             Relax while your Shipeazi pros get the job done
           </p>
           <p className="tracking-wide lg:w-3/4">
