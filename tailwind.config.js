@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Raleway']
+      },
+      colors: {
+        primary: '#26ABE2'
       }
     },
   },
