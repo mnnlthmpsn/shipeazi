@@ -13,9 +13,11 @@ export const Construction = () => {
             <div className="flex flex-col px-12 md:px-24 lg:px-0 items-center space-y-5 lg:space-y-8">
                 <p className='text-4xl lg:text-6xl text-center font-bold'>Coming Soon!!!</p>
                 <p className='lg:text-xl text-center'>Our team is working hard to deliver excellent customer service. Get a notification when we are live</p>
-                <div className="flex w-full lg:w-2/3">
-                    <input type="text" className='outline-none border-blue-400 w-full text-lg p-2 lg:p-4 border' placeholder='john@doe.com'/>
-                    <button className='bg-primary duration-200 border-primary px-4 lg:px-10 text-white lg:font-semibold'>Subscribe</button>
+                <div className="flex-col flex w-full gap-y-3 lg:w-2/3">
+                    <input type="text" className='outline-none border-blue-400 w-full text-lg p-2 lg:px-4 py-3 border' placeholder='john@doe.com'/>
+                    <div className='flex justify-center'>
+                    <button className='bg-primary duration-200 border-primary px-4 py-3 w-full lg:w-auto lg:px-10 text-white lg:font-semibold'>Subscribe</button>
+                    </div>
                 </div>
             </div>
         </div>
