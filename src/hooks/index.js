@@ -1,0 +1,1 @@
+export { usePostHook } from './usePostHook'
