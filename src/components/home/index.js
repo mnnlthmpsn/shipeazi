@@ -1,5 +1,6 @@
 export { IntroSection } from './introSection'
 export { AboutSection } from './aboutSection'
+export { ServicesSection } from './servicesSection'
 export { FirstServiceSection } from './firstServiceSection'
 export { SecondServiceSection } from './secondServiceSection'
 export { Testimonial } from './testimonial'

@@ -1,4 +1,4 @@
-import { LocationMarkerIcon, PlusCircleIcon, ViewGridAddIcon } from "@heroicons/react/solid"
+import { LocationMarkerIcon, ViewGridAddIcon } from "@heroicons/react/solid"
 import { useState } from "react"
 import { BookLayout } from "../components/booking"
 
@@ -10,7 +10,7 @@ export const Location = () => {
     })
 
     return (
-        <BookLayout continue={location.destination !== "" && location.starting_loc !== "" ? true : false}>
+        <BookLayout continue={location.destination !== "" && location.starting_loc !== "" ? true : false} nextPage='/forms'>
             <div className="h-auto flex text-center flex-col items-center px-8 space-y-8 lg:px-24 h-full justify-center">
                 <div className="flex flex-col space-y-2 py-10 lg:py-0">
                     <p className="text-xl lg:text-3xl font-semibold">Enter your location</p>

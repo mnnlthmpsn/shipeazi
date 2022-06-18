@@ -13,8 +13,6 @@ export const BookLayout = props => {
         { text: 'Trusted Reviews', icon: 'https://media.graphcms.com/1r4Ehz7WSk6qYVgraGje' },
     ]
 
-    console.log(props.continue)
-
     return (
         <div className="h-screen flex flex-col justify-between">
             <div className="bg-white">
@@ -31,12 +29,14 @@ export const BookLayout = props => {
                 </div>
             </div>
 
-            { props.children }
+            <div >
+                {props.children}
+            </div>
 
             <div className="sticky bottom-0 lg:static h-24 py-4 lg:py-0 border-t-2 w-full bg-white lg:space-x-72 flex items-center justify-between px-8 lg:justify-center">
                 <ChevronLeftIcon className="h-12 w-auto hover:bg-gray-200 duration-300 rounded-full p-3 cursor-pointer" onClick={() => toRoute(-1)} />
-                { props.continue === false ? <button className="btn-disabled">Continue</button>
-                 : <button className="btn-info" onClick={() => toRoute(props.nextPage)}>Continue</button> }
+                {props.continue === false ? <button className="btn-disabled">Continue</button>
+                    : <button className="btn-info" onClick={() => toRoute(props.nextPage)}>Continue</button>}
             </div>
         </div>
     )

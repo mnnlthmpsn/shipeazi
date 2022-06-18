@@ -4,10 +4,10 @@ import {
   AboutSection,
   FirstServiceSection,
   HowItWorks,
-  IntroSection,
   MoveNowSection,
   NumberSection,
   SecondServiceSection,
+  ServicesSection,
   Testimonial,
 } from "../components/home";
 import { Slider } from "../components/home/slider";
@@ -23,6 +23,7 @@ export const Home = () => {
       <Header toRoute={toRoute} />
       <Slider />
       <AboutSection toRoute={toRoute} />
+      <ServicesSection />
       <FirstServiceSection />
       <Testimonial />
       <NumberSection />
