@@ -15,7 +15,7 @@ export const AboutSection = ({ toRoute }) => {
           background-checked movers, industry-best customer support, and an
           easy-to-access online dashboard.
         </p>
-        <div className="pt-6">
+        <div className="pt-6 w-2/3">
           <button className="btn-primary w-full" onClick={() => toRoute('/book')}>Book a move</button>
         </div>
       </div>

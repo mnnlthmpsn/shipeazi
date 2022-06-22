@@ -18,7 +18,7 @@ export const IntroSection = () => {
           a free quote and book with $0 down. Then, manage every aspect of your
           move from your online dashboard.{" "}
         </p>
-        <div className="pt-6 lg:pt-12">
+        <div className="pt-6 lg:pt-12 w-2/3">
           <button className="btn-primary w-full font-bold" onClick={() => toRoute('/book')}>Book a Move</button>
         </div>
       </div>

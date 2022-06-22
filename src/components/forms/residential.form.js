@@ -1,17 +1,22 @@
 import { TextField, SelectField, TextArea, DateField } from "../shared/inputs"
+import { useNavigate } from 'react-router-dom'
+import { Fragment } from "react"
+
+export const titles = [
+    { key: 'MR', value: 'MR' },
+    { key: 'MRS', value: 'MR' },
+    { key: 'MISS', value: 'MISS' },
+]
+
+export const yes_or_no = [
+    { key: 'Yes', value: true },
+    { key: 'No', value: false },
+]
 
 export const ResidentialMovingForm = () => {
 
-    const titles = [
-        { key: 'MR', value: 'MR' },
-        { key: 'MRS', value: 'MR' },
-        { key: 'MISS', value: 'MISS' },
-    ]
-
-    const yes_or_no = [
-        { key: 'Yes', value: true },
-        { key: 'No', value: false },
-    ]
+    const router = useNavigate()
+    const goBack = () => router(-1)
 
     const moving_sizes = [
         { value: 'small_std', key: 'Small Studio' },
@@ -26,11 +31,11 @@ export const ResidentialMovingForm = () => {
     ]
 
     return (
-        <div className="kPadding flex flex-col space-y-6 pb-10">
-            <p className="pt-8 lg:px-32 text-xl font-bold">Please fill in the forms below to get a Quote</p>
+        <Fragment>
+            <p className="text-2xl lg:px-32">Residential Moving Questionnaire</p>
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
-                    <p className="text-xs">Personal Information</p>
+                    <p className="text-xs md:text-base md:font-bold">Personal Information</p>
                 </div>
                 <form className="md:px-16 lg:px-32 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -52,10 +57,19 @@ export const ResidentialMovingForm = () => {
 
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
-                    <p className="text-xs">Move Origin <b>(From)</b> - Selected From Previous Page</p>
+                    <p className="text-xs md:text-base md:font-bold">Move Origin</p>
                 </div>
                 <form className="md:px-16 lg:px-32 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="col-span-2">
+                            <TextField label='Moving from (Street/City)'/>
+                        </div>
+                        <div className="col-span-fix">
+                            <TextField label='Country'/>
+                        </div>
+                        <div className="col-span-fix">
+                            <TextField label='Region'/>
+                        </div>
                         <div className="col-span-fix">
                             <SelectField label='Is Storey Building?' options={yes_or_no} />
                         </div>
@@ -86,10 +100,19 @@ export const ResidentialMovingForm = () => {
 
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
-                    <p className="text-xs">New Destination <b>(To)</b> - Selected From Previous Page</p>
+                    <p className="text-xs md:text-base md:font-bold">New Destination </p>
                 </div>
                 <form className="md:px-16 lg:px-32 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="col-span-2">
+                            <TextField label='Moving to (Street/City)'/>
+                        </div>
+                        <div className="col-span-fix">
+                            <TextField label='Country'/>
+                        </div>
+                        <div className="col-span-fix">
+                            <TextField label='Region'/>
+                        </div>
                         <div className="col-span-fix">
                             <SelectField label='Is Storey Building?' options={yes_or_no} />
                         </div>
@@ -120,6 +143,6 @@ export const ResidentialMovingForm = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </Fragment>
     )
 }

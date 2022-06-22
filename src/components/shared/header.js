@@ -7,9 +7,11 @@ export const Header = ({ toRoute }) => {
 
   const links = [
     { name: "Services", route: "/services" },
-    { name: "Locations", route: "/locations" },
-    { name: "About", route: "/about" },
-    { name: "Become a Mover", route: "/locations" },
+    { name: "Become a Mover", route: "#" },
+    { name: "Divisions", route: "#" },
+    { name: "Ecommerce", route: "#" },
+    { name: "Help Center", route: "#" },
+    { name: "About", route: "#" },
   ];
 
   return (
@@ -35,10 +37,8 @@ export const Header = ({ toRoute }) => {
               {link.name}
             </p>
           ))}
-          <p className="menu-link">(233) 54 060 9437</p>
         </div>
         <div className="hidden lg:flex space-x-4 items-center">
-          <p className="menu-link">My reservations</p>
           <button className="btn-secondary" onClick={() => toRoute('/book')}>Track Shipment</button>
         </div>
       </div>
