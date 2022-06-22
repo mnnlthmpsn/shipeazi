@@ -17,7 +17,7 @@ export const FreightForm = () => {
 
     return (
         <Fragment>
-            <p className="text-2xl lg:px-32">Freight Transport</p>
+            <p className="lg:text-2xl lg:px-32">Freight Transport</p>
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
                     <p className="text-xs md:text-base md:font-bold">Personal Information</p>

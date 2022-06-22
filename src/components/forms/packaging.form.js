@@ -8,7 +8,7 @@ export const PackagingForm = () => {
 
     return (
         <Fragment>
-            <p className="text-2xl lg:px-32">Packaging Service Questionnaire</p>
+            <p className="lg:text-2xl lg:px-32">Packaging Service Questionnaire</p>
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
                     <p className="text-xs md:text-base md:font-bold">Personal Information</p>
