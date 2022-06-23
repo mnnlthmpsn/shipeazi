@@ -9,7 +9,7 @@ export const Forms = () => {
     const { activeForm } = useForm()
     const router = useNavigate()
     const goBack = () => router(-1)
-
+    
     return (
         <Fragment>
             <SimpleHeader />

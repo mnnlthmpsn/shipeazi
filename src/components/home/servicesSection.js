@@ -29,7 +29,7 @@ export const ServicesSection = () => {
                     <ServiceCard service={menu} />
                 ))}
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 px-32 gap-8 pt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 lg:px-32 gap-8 pt-4">
                 {menus2.map(menu => (
                     <ServiceCard service={menu} />
                 ))}
