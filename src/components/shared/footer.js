@@ -4,7 +4,7 @@ export const Footer = () => {
             <div className="container">
                 <div className="grid lg:grid-cols-4 text-white gap-8">
                     <div className="flex flex-col space-y-8">
-                        <div className="flex flex-col items-center">
+                        <div className="flex flex-col lg:items-center">
                             <p className="font-bold text-xl py-4">Shipping Services</p>
                             <div className="flex flex-col space-y-2">
                                 <p className="quick-link">Road Freight</p>
@@ -12,7 +12,7 @@ export const Footer = () => {
                                 <p className="quick-link">Ocean Freight</p>
                             </div>
                         </div>
-                        <div className="flex flex-col items-center">
+                        <div className="flex flex-col lg:items-center">
                             <p className="font-bold text-xl py-4">E-commerce Services</p>
                             <div className="flex flex-col space-y-2">
                                 <p className="quick-link">E-Commerce Fulfillment</p>
@@ -21,7 +21,7 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col lg:items-center">
                         <p className="font-bold text-xl py-4">Relocation Services</p>
                         <div className="flex flex-col space-y-2">
                             <p className="quick-link">Residential Move</p>
@@ -32,10 +32,10 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col lg:items-center">
                         <p className="font-bold text-xl py-4">Quick Links</p>
                         <div className="flex flex-col space-y-2">
-                            <p className="quick-link">Book a Move</p>
+                            <p className="quick-link">Book a Mover</p>
                             <p className="quick-link">Services</p>
                             <p className="quick-link">About Us</p>
                             <p className="quick-link">Become a Mover</p>
@@ -43,7 +43,7 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col lg:items-center">
                         <p className="font-bold text-xl py-4">Social Media</p>
                         <div className="flex flex-col space-y-2">
                             <p className="quick-link">Instagram</p>
