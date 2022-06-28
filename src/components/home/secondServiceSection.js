@@ -19,10 +19,10 @@ export const SecondServiceSection = () => {
     },
   ];
   return (
-    <div className="bg-gray-100 py-10 lg:py-20">
+    <div className="bg-gray-100 py-10 lg:py-20 md:px-8 lg:px-0">
       <div className="container space-y-24">
-        <p className="text-xl lg:text-4xl text-center font-bold">Moving services we can coordinate for you</p>
-        <div className="grid lg:grid-cols-3 space-8">
+        <p className="text-xl md:text-4xl text-center font-bold">Moving services we can coordinate for you</p>
+        <div className="grid md:grid-cols-3 space-8">
           {services.map((service) => (
             <CardBuilder service={service} />
           ))}

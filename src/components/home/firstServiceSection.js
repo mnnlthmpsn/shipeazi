@@ -19,7 +19,7 @@ export const FirstServiceSection = () => {
     },
   ];
   return (
-    <div className="bg-[#233152] py-8 lg:py-16 mt-10 lg:mt-24 text-white">
+    <div className="bg-[#233152] py-8 lg:py-16 mt-10 lg:mt-24 md:px-32 lg:px-0 text-white">
       <div className="container">
       <p className="text-xl lg:text-4xl font-bold py-12 lg:mb-12 text-center">Free yourself from the usual burdens of moving</p>
       <div className="grid lg:grid-cols-3 space-8 text-white">

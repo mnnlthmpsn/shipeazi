@@ -2,7 +2,7 @@ export const Footer = () => {
     return (
         <div className="bg-[#233152] py-10 lg:py-20 relative">
             <div className="container">
-                <div className="grid lg:grid-cols-4 text-white gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 text-white gap-8">
                     <div className="flex flex-col space-y-8">
                         <div className="flex flex-col lg:items-center">
                             <p className="font-bold text-xl py-4">Shipping Services</p>

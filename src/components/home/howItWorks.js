@@ -4,12 +4,12 @@ export const HowItWorks = () => {
   return (
     <div className="bg-white pb-10 lg:pb-20">
       <div className="container">
-        <p className="text-xl lg:text-4xl text-center font-bold py-10 lg:py-20">
+        <p className="text-xl md:text-4xl text-center font-bold py-10 lg:py-20">
           You may be wondering how it works...
         </p>
 
         <div className="flex-col flex space-y-24 lg:space-y-32">
-          <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
+          <div className="grid md:grid-cols-2 items-center gap-16 lg:gap-0">
             <img src={testImg} alt="" className="img" />
             <div className="flex flex-col space-y-6">
               <p className="text-xl font-semibold">"Coast through our Convenient Booking Process"</p>
@@ -25,8 +25,8 @@ export const HowItWorks = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
-            <div className="flex justify-end lg:order-last">
+          <div className="grid md:grid-cols-2 items-center gap-16 lg:gap-0">
+            <div className="flex md:justify-end md:order-last">
               <img src={testImg} alt="" className="img" />
             </div>
             <div className="flex flex-col space-y-6">
@@ -43,7 +43,7 @@ export const HowItWorks = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0">
+          <div className="grid md:grid-cols-2 items-center gap-16 lg:gap-0">
             <img src={testImg} alt="" className="img" />
             <div className="flex flex-col space-y-6">
               <p className="text-xl font-semibold">"Relax while your Shipeazi pros get the job done"</p>

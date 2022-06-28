@@ -37,7 +37,7 @@ export const ServicesSection = () => {
             {/* Relocation */}
             <div className="container">
                 <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>Relocation Services</p>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {relo_one.map(menu => (
                         <ServiceCard service={menu} />
                     ))}
@@ -47,7 +47,7 @@ export const ServicesSection = () => {
             {/* shipping */}
             <div className="container">
                 <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>Shipping Services</p>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {shipping.map(menu => (
                         <ServiceCard service={menu} />
                     ))}
@@ -57,7 +57,7 @@ export const ServicesSection = () => {
             {/* Ecommerce */}
             <div className="container">
                 <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>E-Commerce Services</p>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {commerce.map(menu => (
                         <ServiceCard service={menu} />
                     ))}
