@@ -2,10 +2,10 @@ import { AnnotationIcon } from "@heroicons/react/solid";
 
 export const Testimonial = () => {
   return (
-    <div className="bg-[#233152] kPaddingMedium">
+    <div className="bg-gray-50 kPaddingMedium">
       <div className="lg:px-48 flex flex-col space-y-8 lg:space-y-16 items-center">
-          <AnnotationIcon className="text-white h-8 w-auto lg:h-16" />
-        <p className="text-white text-lg lg:text-2xl text-center tracking-wide">
+          <AnnotationIcon className="text-[#233152] h-8 w-auto lg:h-16" />
+        <p className="text-[#233152] text-lg lg:text-2xl text-center tracking-wide">
           I’ve been using Bellhop since 2015 and have never had a bad
           experience. Someone asked me recently what company I’m most loyal to,
           and this is the first one that came to mind. You guys have found a way

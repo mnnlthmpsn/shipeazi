@@ -16,7 +16,7 @@ export const Header = ({ toRoute }) => {
 
   return (
     <Fragment>
-      <div className="h-24 bg-white sticky inset-0 z-30 flex justify-between kPadding items-center">
+      <div className="h-24 bg-white shadow fixed inset-0 z-30 flex justify-between kPadding items-center">
         <div className="text-3xl font-semibold">
           <img src={logoLong} alt="logo" className="h-16 w-auto" />
         </div>
@@ -39,7 +39,7 @@ export const Header = ({ toRoute }) => {
           ))}
         </div>
         <div className="hidden lg:flex space-x-4 items-center">
-          <button className="btn-secondary" onClick={() => toRoute('/book')}>Track Shipment</button>
+          <button className="btn-quote" onClick={() => toRoute('/book')}>Track Shipment</button>
         </div>
       </div>
 
@@ -48,6 +48,7 @@ export const Header = ({ toRoute }) => {
         className={`lg:hidden fixed bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-screen" : "opacity-0 hidden"
           }`}
       >
+        <div className="h-24"></div>
         <div className="flex-col p-8 space-y-2">
           {
             links.map(link => (

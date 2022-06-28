@@ -19,25 +19,25 @@ export const FirstServiceSection = () => {
     },
   ];
   return (
-    <div className="kPaddingMedium flex flex-col items-center">
-      <p className="text-2xl text-center lg:text-4xl font-semibold mb-10 lg:mb-20">
-        Free yourself from the usual burdens of moving.
-      </p>
-      <div className="grid lg:grid-cols-3 space-8">
+    <div className="bg-[#233152] py-8 lg:py-16 mt-10 lg:mt-24 text-white">
+      <div className="container">
+      <p className="text-xl lg:text-4xl font-bold py-12 lg:mb-12 text-center">Free yourself from the usual burdens of moving</p>
+      <div className="grid lg:grid-cols-3 space-8 text-white">
         {services.map((service) => (
           <CardBuilder service={service} />
         ))}
       </div>
+    </div>
     </div>
   );
 };
 
 const CardBuilder = ({ service }) => {
   return (
-    <div className="flex flex-col space-y-4 lg:space-y-8 lg:px-8 items-center pb-16 lg:pb-0">
+    <div className="flex flex-col text-white space-y-4 lg:space-y-8 lg:px-8 items-center pb-16 lg:pb-0">
       {service.icon}
-      <p className="text-center text-xl font-semibold">{service.title}</p>
-      <p className="text-center text-gray-500 tracking-wide">{service.text}</p>
+      <p className="text-center lg:text-xl font-semibold">{service.title}</p>
+      <p className="text-center tracking-wide">{service.text}</p>
     </div>
   );
 };

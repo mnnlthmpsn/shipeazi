@@ -1,38 +1,29 @@
 import { Fragment } from "react";
-import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { selectService } from "../globStore/slices/serviceSlice";
 import {
   AboutSection,
   FirstServiceSection,
   HowItWorks,
-  MoveNowSection,
-  NumberSection,
   SecondServiceSection,
   ServicesSection,
   Testimonial,
 } from "../components/home";
 import { Slider } from "../components/home/slider";
-import { Header } from "../components/shared";
-import { useEffect } from "react";
+import { Footer, Header } from "../components/shared";
 
 export const Home = () => {
 
-  const toRoute = route => router(route)
-  const router = useNavigate()
-
   return (
     <Fragment>
-      <Header toRoute={toRoute} />
+      <Header />
       <Slider />
-      <AboutSection toRoute={toRoute} />
+      <AboutSection />
       <ServicesSection />
       <FirstServiceSection />
       <Testimonial />
-      <NumberSection />
-      <HowItWorks toRoute={toRoute} />
+      {/* <NumberSection /> */}
+      <HowItWorks />
       <SecondServiceSection />
-      <MoveNowSection toRoute={toRoute} />
+      <Footer />
     </Fragment>
   );
 };

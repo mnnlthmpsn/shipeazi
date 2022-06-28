@@ -1,6 +1,6 @@
 import { TextField, SelectField, TextArea, DateField } from "../shared/inputs"
-import { useNavigate } from 'react-router-dom'
 import { Fragment } from "react"
+import { useSelector } from "react-redux"
 
 export const titles = [
     { key: 'MR', value: 'MR' },
@@ -13,22 +13,21 @@ export const yes_or_no = [
     { key: 'No', value: false },
 ]
 
+const moving_sizes = [
+    { value: 'small_std', key: 'Small Studio' },
+    { value: 'one_bed', key: 'One Bedroom Apartment' },
+    { value: 'two_bed', key: 'Two Bedroom Apartments' },
+]
+
+const packing_options = [
+    { key: 'Full Packaging Service', value: 'full' },
+    { key: 'Fragile Packaging Service', value: 'fragile' },
+    { key: 'No Packaging Service', value: 'no' },
+]
+
 export const ResidentialMovingForm = () => {
 
-    const router = useNavigate()
-    const goBack = () => router(-1)
-
-    const moving_sizes = [
-        { value: 'small_std', key: 'Small Studio' },
-        { value: 'one_bed', key: 'One Bedroom Apartment' },
-        { value: 'two_bed', key: 'Two Bedroom Apartments' },
-    ]
-
-    const packing_options = [
-        { key: 'Full Packaging Service', value: 'full' },
-        { key: 'Fragile Packaging Service', value: 'fragile' },
-        { key: 'No Packaging Service', value: 'no' },
-    ]
+    const { location: { pick_up, destination } } = useSelector(state => state)
 
     return (
         <Fragment>
@@ -57,19 +56,10 @@ export const ResidentialMovingForm = () => {
 
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
-                    <p className="text-xs md:text-base md:font-bold">Move Origin</p>
+                    <p className="text-xs md:text-base md:font-bold">From: {pick_up}</p>
                 </div>
                 <form className="md:px-16 lg:px-32 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="col-span-2">
-                            <TextField label='Moving from (Street/City)'/>
-                        </div>
-                        <div className="col-span-fix">
-                            <TextField label='Country'/>
-                        </div>
-                        <div className="col-span-fix">
-                            <TextField label='Region'/>
-                        </div>
                         <div className="col-span-fix">
                             <SelectField label='Is Storey Building?' options={yes_or_no} />
                         </div>
@@ -100,19 +90,10 @@ export const ResidentialMovingForm = () => {
 
             <div>
                 <div className="bg-gray-200 lg:mx-32 p-4 rounded-md">
-                    <p className="text-xs md:text-base md:font-bold">New Destination </p>
+                    <p className="text-xs md:text-base md:font-bold">To: {destination}</p>
                 </div>
                 <form className="md:px-16 lg:px-32 py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="col-span-2">
-                            <TextField label='Moving to (Street/City)'/>
-                        </div>
-                        <div className="col-span-fix">
-                            <TextField label='Country'/>
-                        </div>
-                        <div className="col-span-fix">
-                            <TextField label='Region'/>
-                        </div>
                         <div className="col-span-fix">
                             <SelectField label='Is Storey Building?' options={yes_or_no} />
                         </div>

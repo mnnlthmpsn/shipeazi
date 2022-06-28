@@ -12,6 +12,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.container {
+    @apply m-auto max-w-screen-lg p-6
+}
+
 .img {
     @apply w-96 h-auto object-contain
 }
@@ -40,6 +44,18 @@ body {
     @apply rounded bg-primary text-white px-10 py-3 ripple-bg-primary font-bold text-sm 
 }
 
+.btn-quote {
+    @apply rounded bg-primary text-white px-10 py-3 lg:py-4 ripple-bg-primary lg:font-bold text-xs lg:text-sm 
+}
+
+.btn-quote-info {
+    @apply rounded bg-white border border-primary text-primary px-10 py-3 lg:py-4 ripple-bg-primary hover:text-white font-bold text-sm duration-300
+}
+
+.btn-quote-sec {
+    @apply rounded bg-primary text-white px-10 py-3 py-4 ripple-bg-primary font-semibold text-sm 
+}
+
 .btn-disabled {
     @apply rounded bg-gray-200 text-gray-800 px-10 py-3 text-white font-bold text-sm cursor-not-allowed
 }
@@ -49,9 +65,13 @@ body {
 }
 
 .form-control {
-    @apply outline rounded outline-gray-200 w-full px-4 py-3 text-lg font-semibold text-gray-500
+    @apply border-2 rounded border-gray-300 w-full px-4 py-2 lg:py-3 text-sm lg:text-lg lg:font-semibold text-gray-500 outline-none focus:border-primary duration-200
 }
 
 .col-span-fix {
     @apply col-span-2 md:col-span-1
+}
+
+.quick-link {
+    @apply hover:text-yellow-500 duration-300 cursor-pointer
 }
