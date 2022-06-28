@@ -8,6 +8,7 @@ export const Header = ({ toRoute }) => {
   const links = [
     { name: "Services", route: "/services" },
     { name: "Become a Mover", route: "#" },
+    { name: "Divisions", route: "#" },
     { name: "Help Center", route: "#" },
     { name: "About", route: "#" },
   ];
