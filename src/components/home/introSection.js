@@ -28,7 +28,7 @@ export const IntroSection = () => {
             <input type="text" className="form-control" placeholder="eg. 15 Maseru St. East Legon" onChange={e => add_destination(e.target.value)} value={destination} required />
           </div>
           <div className="col-span-1 h-full flex items-end">
-            <button className="btn-quote">Get Quote</button>
+            <button className="btn-quote-sec">Get Quote</button>
           </div>
         </form>
       </div>

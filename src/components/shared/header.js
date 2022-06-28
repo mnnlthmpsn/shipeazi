@@ -8,7 +8,6 @@ export const Header = ({ toRoute }) => {
   const links = [
     { name: "Services", route: "/services" },
     { name: "Become a Mover", route: "#" },
-    { name: "Divisions", route: "#" },
     { name: "Help Center", route: "#" },
     { name: "About", route: "#" },
   ];
@@ -44,7 +43,7 @@ export const Header = ({ toRoute }) => {
 
       {/* mobile menu*/}
       <div
-        className={`lg:hidden fixed bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-screen" : "opacity-0 hidden"
+        className={`lg:hidden fixed bg-gray-50 z-20 duration-300 ${toggle === true ? "opacity-100 h-screen w-screen" : "opacity-0 hidden"
           }`}
       >
         <div className="h-24"></div>
@@ -56,8 +55,7 @@ export const Header = ({ toRoute }) => {
           }
           <p className="menu-link">(233) 54 060 9437</p>
           <div className={`space-y-3 ${toggle === true ? 'opacity-100' : 'opacity-0' }`}>
-            <button className="btn-secondary w-2/3">My Reservations</button>
-            <button className="btn-primary w-2/3" onClick={() => toRoute('/book')}>Book a Move</button>
+            <button className="btn-quote-sec" onClick={() => toRoute('/book')}>Book a Move</button>
           </div>
         </div>
       </div>
