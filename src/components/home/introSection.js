@@ -9,14 +9,14 @@ export const IntroSection = () => {
     <div className="container">
       <div className="flex flex-col items-center justify-center w-full space-y-14">
         <div className="flex flex-col lg:gap-4 items-center justify-center">
-          <p className="text-center font-bold text-white text-3xl lg:text-6xl">Move Anything Hassle Free</p>
-          <p className="text-white lg:text-3xl lg:font-bold">Fast, Safe & Reliable</p>
+          <p className="text-center font-bold text-white text-3xl md:text-4xl lg:text-6xl">Move Anything Hassle Free</p>
+          <p className="text-white md:text-3xl lg:font-bold">Fast, Safe & Reliable</p>
         </div>
-        <form className="w-full bg-white h-auto px-8 pt-4 pb-8 rounded-lg grid md:grid-cols-5 gap-y-3 md:gap-x-5" onSubmit={getQuote}>
+        <form className="w-full bg-white h-auto px-8 pt-4 pb-8 rounded-lg grid lg:grid-cols-5 gap-3 lg:gap-x-5" onSubmit={getQuote}>
           <div className="col-span-2">
             <div className="flex gap-2 items-center py-2">
               <ArrowDownIcon className="h-3 w-auto" />
-              <label htmlFor="destination" className="">Pick-up Location</label>
+              <label htmlFor="destination" className="">Origin</label>
             </div>
             <input type="text" className="form-control" placeholder="eg. Dansoman SSNIT Flats" onChange={e => add_pickup(e.target.value)} value={pick_up} required />
           </div>

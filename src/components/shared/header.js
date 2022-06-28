@@ -50,7 +50,7 @@ export const Header = ({ toRoute }) => {
         <div className="flex-col p-8 space-y-2">
           {
             links.map(link => (
-              <p className="text-lg menu-link">{link.name}</p>
+              <p className="text-md menu-link">{link.name}</p>
             ))
           }
           <p className="menu-link">(233) 54 060 9437</p>
