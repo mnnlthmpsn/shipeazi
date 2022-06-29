@@ -12,7 +12,6 @@ export const IntroSection = () => {
           <p className="text-center font-bold text-white text-3xl md:text-4xl lg:text-6xl">Move Anything Hassle Free</p>
           <p className="text-white md:text-3xl lg:font-bold">Fast, Safe & Reliable</p>
         </div>
-        <div className="grid lg:grid-cols-5"></div>
         <form className="w-full bg-white px-8 pt-4 pb-8 rounded-lg grid lg:grid-cols-5 gap-3 md:gap-x-5" onSubmit={getQuote}>
           <div className="col-span-5 lg:col-span-2">
             <div className="flex gap-2 items-center py-2">
