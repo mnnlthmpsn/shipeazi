@@ -12,6 +12,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.control-dots .dot {
+    background-color: rgb(204, 157, 2) !important;
+    box-shadow: none !important;
+    padding: 2px !important;
+}
+
 .container {
     @apply m-auto max-w-screen-lg p-6
 }
