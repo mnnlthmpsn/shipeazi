@@ -14,17 +14,12 @@ import { Fragment } from 'react'
 export const ServicesSection = () => {
 
     const relo_one = [
-        { title: "Residential Move", description: "Moving house whether short or long distance with our residential move service is easy", img: resGIF },
-        { title: "Corporate Move", description: "Relocating your office or staff is easy with Shipeazi’s comprehensive moving service offering", img: corpGIF },
+        { title: "Home & Office Moves", description: "Moving house whether short or long distance with our residential move service is easy", img: resGIF },
+        { title: "Freight Transport", description: "Description for Road freight", img: airGIF },
         { title: "Packing Services", description: "Our professional packing teams will pack your belongings & make sure they are safe for transport or export", img: packingGIF },
+        { title: "Storage", description: "Relocating your office or staff is easy with Shipeazi’s comprehensive moving service offering", img: corpGIF },
         { title: "Moving Suplies", description: "Strong Carton moving boxes & packaging materials for your smooth move", img: movingGIF },
         { title: "Move-To-Go-Box", description: "Providing an environmentally friendly way to move your home or office. Rent moving & storage boxes for just when you need them", img: MTGIF },]
-
-    const shipping = [
-        { title: "Road Freight", description: "Description for Road freight", img: freightGIF },
-        { title: "Air Freight", description: "Description for Road freight", img: airGIF },
-        { title: "Ocean Freight", description: "Description for Road freight", img: shipGIF },
-    ]
 
     const commerce = [
         { title: "E-commerce Fulfillment", description: "Description for Road freight", img: commerceGIF },
@@ -36,7 +31,7 @@ export const ServicesSection = () => {
         <Fragment>
             {/* Relocation */}
             <div className="container">
-                <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>Relocation Services</p>
+                <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>Services</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {relo_one.map(menu => (
                         <ServiceCard service={menu} />
@@ -44,19 +39,9 @@ export const ServicesSection = () => {
                 </div>
             </div>
 
-            {/* shipping */}
-            <div className="container">
-                <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>Shipping Services</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {shipping.map(menu => (
-                        <ServiceCard service={menu} />
-                    ))}
-                </div>
-            </div>
-
             {/* Ecommerce */}
             <div className="container">
-                <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>E-Commerce Services</p>
+                <p className='text-xl font-bold text-center lg:text-4xl pb-6 lg:pb-12 lg:pt-5'>E-Commerce Solutions</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {commerce.map(menu => (
                         <ServiceCard service={menu} />

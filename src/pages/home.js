@@ -6,6 +6,7 @@ import {
   SecondServiceSection,
   ServicesSection,
   Testimonial,
+  Partner
 } from "../components/home";
 import { Slider } from "../components/home/slider";
 import { Footer, Header } from "../components/shared";
@@ -23,6 +24,7 @@ export const Home = () => {
       {/* <NumberSection /> */}
       <HowItWorks />
       <SecondServiceSection />
+      <Partner />
       <Footer />
     </Fragment>
   );
