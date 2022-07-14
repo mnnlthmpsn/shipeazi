@@ -1,11 +1,13 @@
 import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/solid";
 import { Carousel } from 'react-responsive-carousel';
+import { useNavigate } from 'react-router-dom'
 
 import useBookLocation from "../../hooks/useLoc";
 
 export const IntroSection = () => {
 
   const { destination, pick_up, add_destination, add_pickup, getQuote } = useBookLocation()
+  const route = useNavigate()
 
   return (
     <div className="container">
@@ -14,7 +16,7 @@ export const IntroSection = () => {
           <p className="text-center font-bold text-white text-3xl md:text-4xl lg:text-6xl">Move Anything Hassle Free</p>
           <p className="text-white md:text-3xl lg:font-bold">Fast, Safe & Reliable</p>
         </div>
-        <div className="space-y-3 lg:space-y-0 lg:flex lg:gap-6 w-full bg-white px-8 pt-4 pb-8 rounded-lg">
+        <form className="space-y-3 lg:space-y-0 lg:flex lg:gap-6 w-full bg-white px-8 pt-4 pb-8 rounded-lg" onSubmit={getQuote}>
           {/* origin */}
           <div className="flex grow flex-col">
             <div className="flex gap-2 items-center py-2">
@@ -36,9 +38,9 @@ export const IntroSection = () => {
           {/* button */}
           <div>
             <div className="lg:py-5"></div>
-            <button className="btn-quote-sec">Get Quote</button>
+            <button className="btn-quote-sec" type='submit'>Get Quote</button>
           </div>
-        </div>
+        </form>
         <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false} infiniteLoop={true} interval={5000} className="hidden md:block" >
           {
             [1, 2, 3, 4].map(item => (
