@@ -1,0 +1,6 @@
+export { Header } from './header'
+export { Footer } from './footer'
+export { SharedLayout } from './layout'
+export { TestimonialCarousel } from './testimonialCarousel'
+export { Loader } from './loader'
+export {NotFound} from './404'
