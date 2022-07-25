@@ -57,10 +57,10 @@ const ResidentialMove = () => {
                             </div>
                             <div className="md:px-32 xl:px-96 py-4">
                                 <div className="grid grid-cols-1 gap-6">
-                                    <SelectField label='Will you require Packaging Services' name="is_packaging_required" options={yes_or_no} onChange={handleMoveInputChage} disabled={isLoading}/>
+                                    <SelectField label='Will you require Packaging Services' name="is_packaging_required" options={yes_or_no} onChange={handleMoveInputChage} disabled={isLoading} />
                                     <SelectField label='Will you require Dismantling Services' name="is_dismantling_required" options={yes_or_no} onChange={handleMoveInputChage} disabled={isLoading} />
                                     <SelectField label='Will you require Storage' name="is_storage_required" options={yes_or_no} onChange={handleMoveInputChage} disabled={isLoading} />
-                                    <TextArea label='Please provide details of items to move' name="items_to_move" onChange={handleMoveInputChage} disabled={isLoading}/>
+                                    <TextArea label='Please provide details of items to move' name="items_to_move" onChange={handleMoveInputChage} disabled={isLoading} />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ const ResidentialMove = () => {
                     <div className="flex w-full md:px-32 xl:px-96 space-x-2 justify-end">
                         {activeStep > 1 && <button className="btn-quote-info" type="button" onClick={() => step('prev')}>Back</button>}
                         {activeStep < 3 && <button className="btn-info" type="button" onClick={() => step('next')}>Continue</button>}
-                        {activeStep === 3 && <button className="btn-info" type="submit" >Get Quote</button>}
+                        {activeStep === 3 && <button className="btn-info" type="submit" disabled={isLoading}>{isLoading ? 'Please wait ...' : 'Get Quote'}</button>}
                     </div>
                 </form>
             </BookQuestionnaireLayout>

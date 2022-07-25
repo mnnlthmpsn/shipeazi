@@ -69,7 +69,7 @@ const CorporateMove = () => {
                     <div className="flex w-full md:px-32 xl:px-96 space-x-2 justify-end">
                         {activeStep > 1 && <button className="btn-quote-info" type="button" onClick={() => step('prev')}>Back</button>}
                         {activeStep < 3 && <button className="btn-info" type="button" onClick={() => step('next')}>Continue</button>}
-                        {activeStep === 3 && <button className="btn-info" type="submit" >Get Quote</button>}
+                        {activeStep === 3 && <button className="btn-info" type="submit" disabled={isLoading}>{isLoading ? 'Please wait ...' : 'Get Quote'}</button>}
                     </div>
                 </form>
             </BookQuestionnaireLayout>

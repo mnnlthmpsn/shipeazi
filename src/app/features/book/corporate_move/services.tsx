@@ -46,7 +46,8 @@ const useCorpMoveService = () => {
         }
         
         const data = await execute(payload)
-        showAlert(AlertType.success, data.message, () => navigateTo('/'))
+        showAlert(AlertType.success, data.message)
+        navigateTo('/')
     }
 
     useEffect(() => {
